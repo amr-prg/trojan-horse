@@ -8,20 +8,51 @@
 
     <!-- Link our CSS file -->
     <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
    <header>
-            <div class="nav">   <!--This is navigation menu-->
-                <ul class="nav-but">
-                    <li><a href="index_su.html">Home</a></li>
-                    <li><a href="register.html">Register</a></li>
-                    <li><a href="category.html">Category</a></li>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">ReadersPlanet</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index_su.html">Home <span class="sr-only">(current)</span></a>     <!--Home page anchor link-->
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>   <!--Login page link-->
+            </li>
+    
+            <li class="nav-item">
+              <a class="nav-link" href="register.php">Register</a>   <!--New Registration page link-->
+            </li>
+    
+            <li class="nav-item">
+              <a class="nav-link" href="category.html">Categories</a>     <!--Books Categories page link-->
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact us</a>      <!--Contact us page link-->
+            </li>
+    
+            <li class="nav-item">
+              <a class="nav-link" href="cart.html">Cart</a>               <!--Shopping cart page link-->
+            </li>
+    
+          </ul>
+          <form class="form-inline my-2 my-lg-0" action="Search.php" method="GET">
+            <input class="form-control mr-sm-2" type="search" placeholder="Type Book Name" aria-label="Search" name="bookname">
+            <button class="btn btn-outline-success my-2 my-sm-0" name="submit" type="submit">Find books now</button>
+            
+          </form>
+        </div>
+      </nav>
 </header>
-<body>
     <!-- CAtegories Section Starts Here -->
     <section class="categories">
         <div class="container">
@@ -29,34 +60,35 @@
 
             <a href="category-foods.html">
             <div class="box-3 float-container">
-                <img src="images/1 book.jpg" alt="Pizza" class="img-responsive img-curve">
+                <img src="images/123.jpeg" alt="Pizza" class="img-responsive img-curve">
 
-                <h3 class="float-text text-white">The book of Love</h3>
-                <p>Romance</p>
+                <h3 class="float-text text-white"></h3>
+                <p>Autobiography</p>
             </div>
             </a>
 
             <a href="#">
             <div class="box-3 float-container">
-                <img src="images/2 jaws.jpg" alt="Burger" class="img-responsive img-curve">
+                <img src="images/7891.jpg" alt="Burger" class="img-responsive img-curve">
 
-                <h3 class="float-text text-white">Jaws</h3>
+                <h3 class="float-text text-white"></h3>
                 <P>Thriller</P>
             </div>
             </a>
-
-            <a href="#">
+				<a href="#">
             <div class="box-3 float-container">
-                <img src="images/3 kite.jpg" alt="Momo" class="img-responsive img-curve">
+                <img src="images/122.jpg" alt="Momo" class="img-responsive img-curve">
 
-                <h3 class="float-text text-white">The kite runner</h3>
+                <h3 class="float-text text-white"></h3>
                 <p>Biography</p>
             </div>
             </a>
 
             <div class="clearfix"></div>
         </div>
+          
     </section>
+ 
     <!-- Categories Section Ends Here -->
 	<section class="book-menu">
         <div class="container">
@@ -64,69 +96,70 @@
 
             <div class="book-menu-box">
                 <div class="book-menu-img">
-                    <img src="images/4 girl.jpg" alt="The Girl" class="img-responsive img-curve">
+                    <img src="images/123.jpeg" alt="YES PLEASE" class="img-responsive img-curve">
                 </div>
 
                 <div class="book-menu-desc">
-                    <h4>The girl without a name</h4>
+                    <h4>YES PLEASE</h4>
                     <p class="book-price">$2.3</p>
                     <p class="book-detail">
-                        One of the best thriller..
+                        #1 NEW YORK TiMES BESTSELLER.
                     </p>
                     <br>
 
-                    <a href="order.html" class="btn btn-primary">Order Now</a>
+                   <a href="cart.html" class="btn btn-primary">Add to Cart</a>
                 </div>
             </div>
 
             <div class="book-menu-box">
                 <div class="book-menu-img">
-                    <img src="images/5 solar.jpg" alt="Soolar" class="img-responsive img-curve">
+                    <img src="images/7891.jpg" alt="Soolar" class="img-responsive img-curve">
                 </div>
 
                 <div class="book-menu-desc">
-                    <h4>Solar Bones</h4>
-                    <p class="book-price">$2.3</p>
+                    <h4> Dracula</h4>
+                    <p class="book-price">$3.5</p>
                     <p class="book-detail">
-                        winner if goldsmith prize..
+                        Dead & Alive.
                     </p>
                     <br>
 
-                    <a href="#" class="btn btn-primary">Order Now</a>
+                   <a href="cart.html" class="btn btn-primary">Add to Cart</a>
                 </div>
             </div>
 
             <div class="book-menu-box">
                 <div class="book-menu-img">
-                    <img src="images/6 In.jpg" alt="hmm" class="img-responsive img-curve">
+                    <img src="images/122.jpg" alt="hmm" class="img-responsive img-curve">
                 </div>
 
                 <div class="book-menu-desc">
-                    <h4>In search of a Love story</h4>
+                    <h4>Divided Soul</h4>
                     <p class="book-price">$2.3</p>
                     <p class="book-detail">
-                        A remarkable romantic story..
+                        The life of Marvin Gaye.
                     </p>
                     <br>
 
-                    <a href="#" class="btn btn-primary">Order Now</a>
+                 <a href="cart.html" class="btn btn-primary">Add to Cart</a>
                 </div>
             </div>
 
             <div class="book-menu-box">
                 <div class="book-menu-img">
-                    <img src="images/1 you are not alone.png" alt="Alone" class="img-responsive img-curve">
+                    <img src="images/789.jpg" alt="Alone" class="img-responsive img-curve">
                 </div>
 
                 <div class="book-menu-desc">
-                    <h4>You are not alone</h4>
+                    <h4>Rites of Spring</h4>
                     <p class="book-price">$2.3</p>
                     <p class="book-detail">
-                        New York Times bestseller..
+                        The origin,the impact and the 
+						afternoon of the Great War.
                     </p>
                     <br>
 
-                    <a href="#" class="btn btn-primary">Order Now</a>
+                <a href="cart.html" class="btn btn-primary">Add to Cart</a>
                 </div>
             </div>
 
@@ -143,7 +176,7 @@
                     </p>
                     <br>
 
-                    <a href="#" class="btn btn-primary">Order Now</a>
+                  <a href="cart.html" class="btn btn-primary">Add to Cart</a>
                 </div>
             </div>
 
@@ -160,7 +193,7 @@
                     </p>
                     <br>
 
-                    <a href="#" class="btn btn-primary">Order Now</a>
+                 <a href="cart.html" class="btn btn-primary">Add to Cart</a>
                 </div>
             </div>
 
