@@ -1,0 +1,165 @@
+
+  <!-- Link our CSS file -->
+    <link rel="stylesheet" href="css/style6.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+   <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">ReadersPlanet</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index_su.html">Home <span class="sr-only">(current)</span></a>     <!--Home page anchor link-->
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>   <!--Login page link-->
+            </li>
+    
+            <li class="nav-item">
+              <a class="nav-link" href="register.php">Register</a>   <!--New Registration page link-->
+            </li>
+    
+            <li class="nav-item">
+              <a class="nav-link" href="category.html">Categories</a>     <!--Books Categories page link-->
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact us</a>      <!--Contact us page link-->
+            </li>
+    
+            <li class="nav-item">
+              <a class="nav-link" href="cart.html">Cart</a>               <!--Shopping cart page link-->
+            </li>
+    
+          </ul>
+          <form class="form-inline my-2 my-lg-0" action="Search.php" method="GET">
+            <input class="form-control mr-sm-2" type="search" placeholder="Type Book Name" aria-label="Search" name="bookname">
+            <button class="btn btn-outline-success my-2 my-sm-0" name="submit" type="submit">Find books now</button>
+            
+          </form>
+        </div>
+      </nav>
+</header>
+
+<!-- Book sEARCH Section Starts Here -->
+    <section class="book-search">
+        <div class="container">
+            
+            <h2 class="text-center text-white">Fill this form to confirm your order.</h2>
+
+            <form action="#" class="order">
+                <fieldset>
+                    <legend>Selected Book</legend>
+                        <div class="order-label">Quantity</div>
+                        <input type="number" name="qty" class="input-responsive" value="1" required>
+                        
+                    </div>
+
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Delivery Details</legend>
+                    <div class="order-label">Full Name</div>
+                    <input type="text" name="full-name" placeholder="E.g. Sarina KC" class="input-responsive" required>
+
+                    <div class="order-label">Phone Number</div>
+                    <input type="tel" name="contact" placeholder="E.g. 9843xxxxxx" class="input-responsive" required>
+
+                    <div class="order-label">Email</div>
+                    <input type="email" name="email" placeholder="E.g.sarina@gmail.com" class="input-responsive" required>
+
+                    <div class="order-label">Address</div>
+                    <textarea name="address" rows="10" placeholder="E.g. Street, City, Country" class="input-responsive" required></textarea>
+
+                    <input type="submit" name="submit" value="Confirm Order" class="btn btn-primary">
+                </fieldset>
+				<h1>Shopping Cart</h1>
+
+<div class="shopping-cart">
+
+  <div class="column-labels">
+    <label class="product-image">Image</label>
+    <label class="product-details">Product</label>
+    <label class="product-price">Price</label>
+    <label class="product-quantity">Quantity</label>
+    <label class="product-removal">Remove</label>
+    <label class="product-line-price">Total</label>
+  </div>
+
+  <div class="product">
+    <div class="product-image">
+      <img src<"C:\Users\sarin\Desktop\readersplanet\images">
+    </div>
+    <div class="product-details">
+      <div class="product-title">Divided Soul</div>
+      <p class="product-description">A biography of "Prince of Soul". David Ritz, a friend of Marvin Gaye, had been working on this biography for several years befire the singer's death, and has=d conducted interbiews with him.</p>
+    </div>
+    <div class="product-price">22.99</div>
+    <div class="product-quantity">
+      <input type="number" value="2" min="1">
+    </div>
+    <div class="product-removal">
+      <button class="remove-product">
+        Remove
+      </button>
+    </div>
+    <div class="product-line-price">25.98</div>
+  </div>
+
+  <div class="product">
+    <div class="product-image">
+      <img src="C:\Users\sarin\Desktop\readersplanet\images">
+    </div>
+    <div class="product-details">
+      <div class="product-title">Yes Please</div>
+      <p class="product-description">Yes Please, is a humorous book that combines autobiographical essays and memories. She writes about her childhood and her carrer in improvisational comdey.</p>
+    </div>
+    <div class="product-price">23.95</div>
+    <div class="product-quantity">
+      <input type="number" value="1" min="1">
+    </div>
+    <div class="product-removal">
+      <button class="remove-product">
+        Remove
+      </button>
+    </div>
+    <div class="product-line-price">22.00</div>
+  </div>
+
+  <div class="totals">
+    <div class="totals-item">
+      <label>Subtotal</label>
+      <div class="totals-value" id="cart-subtotal">71.97</div>
+    </div>
+    <div class="totals-item">
+      <label>Tax (5%)</label>
+      <div class="totals-value" id="cart-tax">3.60</div>
+    </div>
+    <div class="totals-item">
+      <label>Shipping</label>
+      <div class="totals-value" id="cart-shipping">15.00</div>
+    </div>
+    <div class="totals-item totals-item-total">
+      <label>Grand Total</label>
+      <div class="totals-value" id="cart-total">90.57</div>
+    </div>
+  </div>
+      
+      <button class="checkout">Checkout</button>
+
+</div>
+
+            </form>
+
+        </div>
+    </section>
+ 
+
+</body>
+</html>
